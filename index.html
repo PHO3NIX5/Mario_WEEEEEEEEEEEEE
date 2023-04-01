@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <title>RiPoFF_MaRiO</title>
+  <!-- link p5.js and its addons like p5.dom.js or p5.sound.js -->
+  <script src="lib/p5.min.js" type="text/javascript"></script>
+  <!-- link p5.play.js -->
+  <script src="lib/p5.play.js" type="text/javascript"></script>
+  <!-- link p5.dom.js -->
+  <script src="lib/p5.dom.js" type="text/javascript"></script>
+
+  <!-- link your javascript sketch -->
+  <script src="scripts/sprites.js" type="text/javascript"></script>
+
+  <script src="main.js" type="text/javascript"></script>
+
+  <script src="characters_environment.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+
+<body>
+  <div id="heading">
+    <h1 id="heading_h1">RiPoFF_MaRiO</h1>
+    <button class="btn btn-info" onclick="Game_console()" id="Game_console">Game Console</button>
+    <button class="btn btn-success" id="Tutorial" data-target="#MyModal" data-toggle="modal">Tutorial</button>
+  </div>
+  <img src="mario.jpg" id="Mario4K"><br><br>
+  <button onclick="start_Game()" class="btn btn-success" id="Start">Start</button>
+  <!-- <button onclick="pause_Game()" class="btn btn-danger" id="Pause">Pause</button> -->
+  <br>
+  <h3 class="btn btn-success" id="status"></h3>
+  <br><br>
+  
+  <div class="modal fade" id="MyModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+    <h4>Instructions</h4>
+  </div>
+  <div class="modal-body">
+    <img src="jump.png" class="info">
+    <img src="right.png" class="info">
+    <img src="left.png" class="info">
+  </div></div></div></div>
+  <div id="canvas">
+
+  </div>
+  <div id="Game_Console"></div>
+  <div id="footer">Modified By PH03NIX5</div>
+</body>
+
+</html>

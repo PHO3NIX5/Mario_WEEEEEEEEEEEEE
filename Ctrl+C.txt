@@ -1,0 +1,43 @@
+
+img = "";
+X = 0;
+Y = 0;
+marioX = 325;
+marioY = 325;
+vid="";
+status=0;
+function preload()
+{
+  img = loadImage("mario05.png");
+}
+
+function setup() {
+   createCanvas(650, 400);
+  vid = createCapture(VIDEO);
+  vid.size(650,400)
+  posenet=ml5.poseNet(vid,modelLoaded);
+  posenet.on("pose",gotResults)
+}
+function gotResults(results){
+  if(results.length>0){
+    X=results[0].pose.nose.x;
+    Y=results[0].pose.nose.y;
+    if(X>=325){
+    marioX=marioX+5;
+    }
+    if(X<=325){
+    marioX=marioX-5;
+    }
+    if(Y<=200){
+    marioY=marioY-5;
+    }
+
+  }
+}
+function draw() {
+  background("#D3D3D3");
+  image(img,marioX, marioY, 40,70);
+}
+function modelLoaded(){
+  console.log("Model Loaded")
+}

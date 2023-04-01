@@ -1,0 +1,48 @@
+#heading{
+background-color: rgb(0, 255, 0);
+padding-top: 10px;
+margin-top: 0px;
+text-align: center;
+padding-bottom: 10px;
+}
+#Tutorial{
+    float: right;
+    margin-right:10px ;
+}
+#Game_console{
+    float: right;
+    
+}
+video{
+    background :url("game_console.png") ;
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+}
+#heading_h1{
+    display: inline;
+}
+#Start,#status,#Pause{
+    font-size: 25px;
+}
+body{
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+#info{
+    width: 45%;
+    display: inline-block;
+}
+#footer{
+    position: fixed ;
+    bottom: 0;
+    font-size: 20px;
+    background-color: rgb(0, 255, 0);
+    width: 100%;
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
